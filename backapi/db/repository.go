@@ -1,7 +1,6 @@
 package db
 
 import (
-	// ...
 	"fmt"
 
 	"github.com/RyuseiAndy/go-vue-pay-pj/backapi/domain"
