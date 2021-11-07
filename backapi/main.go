@@ -1,8 +1,6 @@
 package main
 
 import (
-	// ...
-
 	"os"
 
 	"github.com/RyuseiAndy/go-vue-pay-pj/backapi/infrastructure"

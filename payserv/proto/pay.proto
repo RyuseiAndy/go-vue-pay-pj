@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package paymentservice;
 
-option go_package = "github.com/RyuseiAndy/go-vue-pay-pj/payserv/proto";
+option go_package = "github.com/RyuseiAndy/go-vue-pay-pj/payserv/proto;paymentservice";
 
 service PayManager {
   // 支払いを行うサービスを定義
