@@ -55,7 +55,7 @@ func main() {
 		log.Fatalf("failed to listen: %v", err)
 	}
 	s := grpc.NewServer()
-	gpay.RegisterPayManagerServer(s, &server{})
+	gpay.RegisterPayManagerServer(s, gpay.UnimplementedPayManagerServer{})
 
 	// Register reflection service on gRPC server.
 	reflection.Register(s)
