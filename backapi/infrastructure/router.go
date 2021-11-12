@@ -9,7 +9,6 @@ import (
 	gin "github.com/gin-gonic/gin"
 )
 
-// Router - router api server
 var Router *gin.Engine
 
 func init() {
