@@ -1,8 +1,6 @@
 package infrastructure
 
 import (
-	"os"
-
 	"github.com/RyuseiAndy/go-vue-pay-pj/backapi/handler"
 
 	"github.com/gin-contrib/cors"
@@ -15,7 +13,7 @@ func init() {
 	router := gin.Default()
 
 	router.Use(cors.New(cors.Config{
-		AllowOrigins: []string{os.Getenv("CLIENT_CORS_ADDR")},
+		AllowOrigins: []string{"http://localhost:8080"},
 		AllowMethods: []string{"GET", "POST"},
 		AllowHeaders: []string{"Origin", "Content-Type"},
 	}))
