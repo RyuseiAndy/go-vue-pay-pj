@@ -22,12 +22,10 @@ export default {
     }
   },
   methods: {
-    // ページ移動
     pageto: function (id) {
       this.$router.push(`/items/${id}`)
     }
   },
-  // 商品リストをすべてとってくる
   created () {
     axios.get('http://localhost:8888/api/v1/items').then(res => {
       this.items = res.data
