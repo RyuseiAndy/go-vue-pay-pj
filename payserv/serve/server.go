@@ -28,12 +28,10 @@ func (s *server) Charge(ctx context.Context, req *gpay.PayRequest) (*gpay.PayRes
 
 	// 支払いをします。第一引数に支払い金額、第二引数に支払いの方法や設定を入れます。
 	charge, err := pay.Charge.Create(int(req.Amount), payjp.Charge{
-		// 現在はjpyのみサポート
-		Currency: "jpy",
-		// カード情報、顧客ID、カードトークンのいずれかを指定。今回はToken使います。
-		CardToken: req.Token,
-		Capture:   true,
-		// 概要のテキストを設定できます
+
+		Currency:    "jpy",
+		CardToken:   req.Token,
+		Capture:     true,
 		Description: req.Name + ":" + req.Description,
 	})
 	if err != nil {

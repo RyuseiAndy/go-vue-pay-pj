@@ -32,7 +32,6 @@ func SelectAllItems() (items domain.Items, err error) {
 	return
 }
 
-// SelectItem - select post
 func SelectItem(identifier int64) (item domain.Item, err error) {
 	stmt, err := Conn.Prepare(fmt.Sprintf("SELECT * FROM items WHERE id = ? LIMIT 1"))
 	if err != nil {
