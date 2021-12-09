@@ -8,6 +8,7 @@
 </div>
 </template>
 
+
 <script>
 import axios from 'axios'
 import ItemCard from './ItemCard'
@@ -36,6 +37,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.home{
+  background: #24c6dc; /* fallback for old browsers */
+  background: linear-gradient(to right, #514a9d 0%, #24c6dc 100%);
+  opacity: 0.5;
+  animation: huerotator 20s infinite alternate;
+  color: cornsilk;
+}
+
 h1, h2 {
   font-weight: normal;
 }
