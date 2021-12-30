@@ -1,8 +1,15 @@
 <template>
-  <div class="itemcard">
-    <h1>{{ item.Name }}</h1>
-    <h2>{{ item.Description }}</h2>
-    <h2>{{ item.Amount }}円</h2>
+ <div>
+    <v-card>
+      <v-img
+        height="250"
+        width="210"
+        src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+      ></v-img>
+      <v-card-title class="my-9">{{ item.Name }}</v-card-title>
+      <v-card-text>{{ item.Description }}</v-card-text>
+      <p class="align-right">{{ item.Amount }}円</p>
+    </v-card>
   </div>
 </template>
 
@@ -17,21 +24,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.itemcard {
-  border: solid 1px gray;
-}
+  .align-right{
+    text-align: right;
+  }
 </style>

@@ -1,8 +1,17 @@
 <template>
-  <div class="hello">
-    <h1>{{ item.Name }}</h1>
-    <h2>{{ item.Description }}</h2>
-    <h2>{{ item.Amount }}円</h2>
+  <div>
+    <v-card>
+      <v-layout justify-center>
+      <v-img
+        height="280"
+        width="210"
+        src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+      ></v-img>
+      </v-layout>
+      <v-card-title class="my-9">{{ item.Name }}</v-card-title>
+      <v-card-text>{{ item.Description }}</v-card-text>
+      <p class="align-right">{{ item.Amount }}円</p>
+    </v-card>
     <payjp-checkout
       api-key="pk_test_892373dd331d28fa5152438e"
       client-id="d3d774f50bb006c26bac19402f0140a7228f8522"
@@ -12,8 +21,11 @@
       v-on:created="onTokenCreated"
       v-on:failed="onTokenFailed">
     </payjp-checkout>
+    
     <p>{{ message }}</p>
-    <router-link to="/">HOMEへ</router-link>
+    <v-btn depressed elevation="2" outlined>
+    <router-link to="/">HOME</router-link>
+    </v-btn>
   </div>
 </template>
 
@@ -39,7 +51,7 @@ export default {
     onTokenCreated: function (res) {
       console.log(res.id)
       const data = {Token: res.id}
-      axios.post(`http://localhost:8888/api/v1/charge/items/${this.$route.params.id}`, data).then(res => {
+      axios.post(`http://localhost:8888/api/v1/charge/items/${this.$route.params.id}`, data).then(() => {
         this.message = '商品の購入が完了しました！'
       })
     },
@@ -53,18 +65,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  .align-right{
+    text-align: middle;
+  }
 </style>

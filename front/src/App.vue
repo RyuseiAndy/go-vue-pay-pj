@@ -1,11 +1,40 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <v-app id="inspire">
+    <v-app-bar
+    app
+    shrink-on-scroll
+    color="white"
+    elevation="15"
+    dense
+    >
+
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+      <v-toolbar-title>Rand</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+    
+
+      <v-btn icon>
+        <v-icon>mdi-dots-vertical</v-icon>
+
+      </v-btn>
+    </v-app-bar>
+
+    <v-main>
+      
     <router-view/>
-  </div>
+      <v-container>
+        <v-row>
+          <div id="app">
+        <div id="nav">
+          
+        </div>
+      </div>
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <style>
@@ -14,7 +43,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #d3f129;
 }
 
 #nav {

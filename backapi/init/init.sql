@@ -10,8 +10,8 @@ CREATE TABLE items (
 
 INSERT INTO items (name, description, amount)
 VALUES
-  ('toy', 'test-toy', 2000);
+  ('toy1', 'test-toy', 2000);
 
 INSERT INTO items (name, description, amount)
 VALUES
-  ('game', 'test-game', 6000);
+  ('game1', 'test-game', 6000);
