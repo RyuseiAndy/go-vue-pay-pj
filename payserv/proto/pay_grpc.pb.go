@@ -39,21 +39,19 @@ func (c *payManagerClient) Charge(ctx context.Context, in *PayRequest, opts ...g
 }
 
 // PayManagerServer is the server API for PayManager service.
-// All implementations must embed UnimplementedPayManagerServer
+// All implementations should embed UnimplementedPayManagerServer
 // for forward compatibility
 type PayManagerServer interface {
 	Charge(context.Context, *PayRequest) (*PayResponse, error)
-	mustEmbedUnimplementedPayManagerServer()
 }
 
-// UnimplementedPayManagerServer must be embedded to have forward compatible implementations.
+// UnimplementedPayManagerServer should be embedded to have forward compatible implementations.
 type UnimplementedPayManagerServer struct {
 }
 
 func (UnimplementedPayManagerServer) Charge(context.Context, *PayRequest) (*PayResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Charge not implemented")
 }
-func (UnimplementedPayManagerServer) mustEmbedUnimplementedPayManagerServer() {}
 
 // UnsafePayManagerServer may be embedded to opt out of forward compatibility for this service.
 // Use of this interface is not recommended, as added methods to PayManagerServer will
