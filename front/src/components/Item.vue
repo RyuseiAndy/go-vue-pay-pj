@@ -51,8 +51,8 @@ export default {
     onTokenCreated: function (res) {
       console.log(res.id)
       const data = {Token: res.id}
-      axios.post(`http://localhost:8888/api/v1/charge/items/${this.$route.params.id}`, data).then(() => {
-        this.message = '商品の購入が完了しました！'
+      axios.post(`http://localhost:8888/api/v1/charge/items/${this.$route.params.id}`, data).then(res => {
+        this.message = '商品の購入が完了しました'
       })
     },
     onTokenFailed: function (status, err) {
