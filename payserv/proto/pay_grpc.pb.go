@@ -18,7 +18,6 @@ const _ = grpc.SupportPackageIsVersion7
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type PayManagerClient interface {
-	// 支払いを行うサービスを定義
 	Charge(ctx context.Context, in *PayRequest, opts ...grpc.CallOption) (*PayResponse, error)
 }
 
@@ -43,7 +42,6 @@ func (c *payManagerClient) Charge(ctx context.Context, in *PayRequest, opts ...g
 // All implementations must embed UnimplementedPayManagerServer
 // for forward compatibility
 type PayManagerServer interface {
-	// 支払いを行うサービスを定義
 	Charge(context.Context, *PayRequest) (*PayResponse, error)
 	mustEmbedUnimplementedPayManagerServer()
 }

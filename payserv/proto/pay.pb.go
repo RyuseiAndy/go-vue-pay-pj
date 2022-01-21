@@ -20,7 +20,7 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-// カード決済に使うパラメーターをリクエストに定義
+// カード決済に使うパラメーター
 type PayRequest struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -100,7 +100,7 @@ func (x *PayRequest) GetDescription() string {
 	return ""
 }
 
-// カード決済後のレスポンスを定義
+// カード決済後のレスポンス
 type PayResponse struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
