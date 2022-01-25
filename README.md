@@ -2,10 +2,12 @@
 <p>
 <span class="mgr-10"></span>
 </p>
+
 ## Why did you decide to create it? ##
 <p>
 <h3><span class="mgr-10">ー   I want to create a simple payment service using gRPC.   ー</span></h3>
 </p>
+
 ## Benefits ##
 <p>
 <h3>ー   Modern, fast communication, low latency, efficient data transmission   ー</h3>
@@ -14,5 +16,5 @@
 </p>
 <span class="mgr-10"></span>
 
-## Still working to complete the project. ##
+### Still working to complete the project. ###
 
