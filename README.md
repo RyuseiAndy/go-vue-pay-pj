@@ -16,5 +16,4 @@
 </p>
 <span class="mgr-10"></span>
 
-### Still working to complete the project. ###<img src="https://img.icons8.com/external-color-for-better-life-royyan-wijaya/64/000000/external-color-ghost-emoji-color-for-better-life-royyan-wijaya-36.png"/>
-
+ &#x1f4a3;  Still working to complete the project.  &#x1f4a3; 
