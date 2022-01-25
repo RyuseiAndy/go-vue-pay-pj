@@ -1,12 +1,14 @@
-### PAY.JPを利用したマイクロ決済サービス  :dragon: ###
+# Micro-payment service using PAY.JP  :dragon: #
 
-## きっかけ ##
-<h2>ー   gRPCを利用した簡単な決済サービスを作りたい   ー</h2>
+<span class="mgr-10"></span>
 
-## メリット ##
-<h2>ー   モダン、通信が早くて低遅延、データ送信が効率的   ー</h2>
-<h2>ー   API設計/仕様の定義が楽、ルールが定められてて逸脱しにくい   ー</h2>
-<h2>ー   HTTP/2の恩恵を受けれる(高速、双方間ストリーミング通信)   ー</h2>
+## Why did you decide to create it? ##
+<h3><span class="mgr-10">ー   I want to create a simple payment service using gRPC.   ー</span></h3>
 
-## 現在も完成に向けて制作中 ##
+## Benefits ##
+<h3>ー   Modern, fast communication, low latency, efficient data transmission   ー</h3>
+<h3>ー   Easy to define API design and specification, rules are defined and difficult to deviate from   ー</h3>
+<h3>ー   Benefit from HTTP/2 (high speed, two-way streaming communication)   ー</h3>
+<span class="mgr-10"></span>
+## Still working to complete the project. ##
 
