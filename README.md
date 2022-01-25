@@ -17,3 +17,8 @@
 <span class="mgr-10"></span>
 
  &#x1f4a3;  Still working to complete the project.  &#x1f4a3; 
+ 
+ 
+ 
+<img src="https://img.shields.io/badge/-Go-76E1FE.svg?logo=go&style=plastic">
+<img src="https://img.shields.io/badge/-Vue.js-4FC08D.svg?logo=vue.js&style=popout">
