@@ -6,19 +6,15 @@
 ー  gRPCを利用したマイクロ決済ショッピングサイトです。簡単なショッピングサイトで購入したいアイテムを選択するとアイテムの画像、値段、商品名が表示され購入に進むと（VISA、JCB、クレジットカード）の番号を入力する事で商品の購入をする事ができる仕様になっています。
 &nbsp;
 <div align="center">
-<img width="1434" alt="スクリーンショット 2022-02-01 15 26 28" src="https://user-images.githubusercontent.com/83407832/151931139-64938e51-b4fc-490b-8794-2abb75590e5f.png">
+<img width="980" alt="スクリーンショット 2022-02-01 15 26 28" src="https://user-images.githubusercontent.com/83407832/151931139-64938e51-b4fc-490b-8794-2abb75590e5f.png">
 </div>
-&nbsp;
 <h4 align="center">現在のホーム画面</h4>
-&nbsp;
 <div align="center">
-<img width="1440" alt="スクリーンショット 2022-02-01 17 00 56" src="https://user-images.githubusercontent.com/83407832/151932292-dc87015f-7465-40d1-a9cc-d0ca3d0343b4.png">
+<img width="980" alt="スクリーンショット 2022-02-01 17 00 56" src="https://user-images.githubusercontent.com/83407832/151932292-dc87015f-7465-40d1-a9cc-d0ca3d0343b4.png">
 </div>
-&nbsp;
 <h4 align="center">アイテム選択がめん</h4>
-&nbsp;
 <div align="center">
-<img width="1158" alt="スクリーンショット 2022-02-01 15 27 07" src="https://user-images.githubusercontent.com/83407832/151931150-39a20d67-b9d8-433b-a0dd-aaf4d7f94726.png">
+<img width="980" alt="スクリーンショット 2022-02-01 15 27 07" src="https://user-images.githubusercontent.com/83407832/151931150-39a20d67-b9d8-433b-a0dd-aaf4d7f94726.png">
 </div>
 &nbsp;
 <h4 align="center">決済画面</h4>
