@@ -1,24 +1,30 @@
-# Micro-payment service using PAY.JP  :dragon: #
+# マイクロ決済サービスを利用したショッピングサイト  :dragon: #
 <p>
 <span class="mgr-10"></span>
 </p>
+<h3 align="left">概要</h3>
+ー  gRPCを利用したマイクロ決済ショッピングサイトです。簡単なショッピングサイトで購入したいアイテムを選択するとアイテムの画像、値段、商品名が表示され購入に進むと（VISA、JCB、クレジットカード）の番号を入力する事で商品の購入をする事ができる仕様になっています。
 
-## Why did you decide to create it? ##
-<p>
-<h3><span class="mgr-10">ー   I want to create a simple payment service using gRPC.After considering the advantages, I thought it would be useful for improving my skills in the future. This was the first time for me to actually write a database and front-end process, but I proceeded with the work with the help of my friend who works as a web engineer.   </span></h3>
-</p>
+<h3 align="left">使用技術</h3>
+ー  gRPC、 PAY.JP, バック側：Go(フレームワーク Gin), フロント側：Vue.js
 
-## Benefits ##
-<p>
-<h3>ー   Modern, fast communication, low latency, efficient data transmission   </h3>
-<h3>ー   Easy to define API design and specification, rules are defined and difficult to deviate from   </h3>
-<h3>ー   Benefit from HTTP/2 (high speed, two-way streaming communication)   </h3>
-</p>
+<h3 align="left">背景</h3>
+ー  作成しようと考えたきっかけはECサイトを利用した際に,ECサイトがどの様に構築されているか気になり自分の手で作成したいと考えたからです。
+ー  自分の友人が私の好きなブランドサイトのショッピングサイトの構築に携わっているのを知り、私もWebエンジニアになりたいと思ったのがきっかけです。
+
+<h3 align="left">実装機能</h3>
+ー  アイテム（商品）の表示：名前、値段、アイテム画像
+ー  商品購入時の決済機能
+ー  これから実装予定の機能 :dragon:
+ー  ユーザー個人のページ  
+ー  ログイン機能、ログアウト機能
+ー  購入履歴閲覧ページ
+
+<h3 align="left">工夫</h3>
+ー  最近ではWebベースのシステムにおいてHTTP/HTTPSベースでサーバー・クライアント間のやり取りが行われ、その際のデータフォーマートにはXMLを利用する「XML-RPC」や、同じくHTTP/HTTPSベースでデータフォーマットにJSONを利用する「JSON-RPC」が多く使われている。しかし、基本的にテキストベースで情報をやり取りするためデータの転送効率が悪く、バイナリデータを扱いにくいという問題があったためそれを解決するために今回gRPCを利用した。
+ー  gRPCはサーバーおよびクライアント側のコードを自動的に生成するツールが提供されているため、これを利用することで簡単にサーバーおよびクライアントを実装できるようになっている
+
+
 <span class="mgr-10"></span>
 
  &#x1f4a3;  Still working to complete the project.  &#x1f4a3; 
- 
- 
- 
-<img src="https://img.shields.io/badge/-Go-76E1FE.svg?logo=go&style=plastic">
-<img src="https://img.shields.io/badge/-Vue.js-4FC08D.svg?logo=vue.js&style=popout">
