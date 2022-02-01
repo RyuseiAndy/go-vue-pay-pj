@@ -12,7 +12,7 @@
 <h4 align="center">現在のホーム画面</h4>
 &nbsp;
 <div align="center">
-<img width="1425" alt="スクリーンショット 2022-02-01 15 26 42" src="https://user-images.githubusercontent.com/83407832/151931145-df0f06fd-9ca8-4784-b956-d250beb048e3.png">
+<img width="1440" alt="スクリーンショット 2022-02-01 17 00 56" src="https://user-images.githubusercontent.com/83407832/151932292-dc87015f-7465-40d1-a9cc-d0ca3d0343b4.png">
 </div>
 &nbsp;
 <h4 align="center">アイテム選択がめん</h4>
@@ -34,6 +34,7 @@
 <h3 align="left">実装機能</h3>
 ー  アイテム（商品）の表示：名前、値段、アイテム画像
 ー  商品購入時の決済機能
+&nbsp;
 ー  これから実装予定の機能 :dragon:
 ー  ユーザー個人のページ  
 ー  ログイン機能、ログアウト機能
