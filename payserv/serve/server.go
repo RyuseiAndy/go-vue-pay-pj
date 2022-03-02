@@ -23,10 +23,9 @@ const (
 type server struct{}
 
 func (s *server) Charge(ctx context.Context, req *gpay.PayRequest) (*gpay.PayResponse, error) {
-	// PAI の初期化
+
 	pay := payjp.New(os.Getenv("PAYJP_TEST_SECRET_KEY"), nil)
 
-	// 支払いをします。第一引数に支払い金額、第二引数に支払いの方法や設定を入れます。
 	charge, err := pay.Charge.Create(int(req.Amount), payjp.Charge{
 
 		Currency:    "jpy",
@@ -38,7 +37,6 @@ func (s *server) Charge(ctx context.Context, req *gpay.PayRequest) (*gpay.PayRes
 		return nil, err
 	}
 
-	// 支払った結果から、Response生成
 	res := &gpay.PayResponse{
 		Paid:     charge.Paid,
 		Captured: charge.Captured,
@@ -52,10 +50,10 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
-	s := grpc.NewServer()
-	gpay.RegisterPayManagerServer(s, gpay.UnimplementedPayManagerServer{})
 
-	// Register reflection service on gRPC server.
+	s := grpc.NewServer()
+	gpay.RegisterPayManagerServer(s, &server{})
+
 	reflection.Register(s)
 	log.Printf("gRPC Server started: localhost%s\n", port)
 	if err := s.Serve(lis); err != nil {
